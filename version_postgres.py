@@ -3,7 +3,11 @@ from config.config import config
 
 def connect():
     """ Connect to the PostgreSQL database server """
-    conn = None
+    conn = psycopg2.connect(
+        host="localhost",
+        database="suppliers",
+        user="postgres",
+        password="t00tmanyw0rds")    
     try:
         # read connection parameters
         params = config()
