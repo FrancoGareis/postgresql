@@ -1,6 +1,8 @@
 from configparser import ConfigParser
 
-def config(filename='/home/franco/projects/postgresDatabase/postgresql/config/database.ini', section='postgresql'):
+DB_FILENAME="/home/franco/projects/postgresDatabase/postgresql/config/database.ini"
+
+def config(filename=DB_FILENAME, section='postgresql'):
     # create a parser
     parser = ConfigParser()
     # read config file
